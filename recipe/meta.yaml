@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
@@ -21,7 +21,7 @@ requirements:
     - python >=3.6
   run:
     - coverage >=3.7.1
-    - coveralls ==1.1
+    - coveralls >=1.1
     - pptree >=2.0
     - pytest
     - pytest-cov ==2.5.1
